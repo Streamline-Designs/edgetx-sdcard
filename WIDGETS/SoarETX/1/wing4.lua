@@ -3,7 +3,7 @@
 --                                                                       --
 -- Author:  Jesper Frickmann                                             --
 -- Date:    2022-08-20                                                   --
--- Version: 1.0.0                                                        --
+-- Version: 1.0.2                                                        --
 --                                                                       --
 -- Copyright (C) EdgeTX                                                  --
 --                                                                       --
@@ -79,7 +79,7 @@ end
 
 -- Make sure that we have the right number of points on the curve
 local function GetCurve(crvIndex)
-	local tbl = model.getCurve(crvIndex)
+	local tbl = soarGlobals.getCurve(crvIndex)
 
   if #tbl.y ~= N then
     stepOff()
